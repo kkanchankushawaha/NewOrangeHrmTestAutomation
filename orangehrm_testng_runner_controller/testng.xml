@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test thread-count="5" name="chrome scripts">
+        <parameter name="browsername" value="chrome"/>
+        <parameter name="author" value="kanchan"/>
+        <classes>
+            <class name="com.envision.orangehrmautomationscripts.testrunner.Orangehrm_EmployeePortal_TestRunner">
+                <methods>
+                    <include name="VerifyingTheLoginCredentialsIsAvailability"/>
+                    <include name="VerifyTheUserProfilePageLinks"/>
+                </methods>
+            </class> <!-- com.envision.orangehrmautomationscripts.testrunner.Orangehrm_EmployeePortal_TestRunner -->
+        </classes>
+    </test> <!-- NewOrangeHrmTestAutomation -->
+
+   <test thread-count="5" name="edge scripts">
+        <parameter name="browsername" value="edge"/>
+        <parameter name="author" value="kanchan"/>
+        <classes>
+            <class name="com.envision.orangehrmautomationscripts.testrunner.Orangehrm_EmployeePortal_TestRunner">
+                <methods>
+                    <include name="VerifyingTheLoginCredentialsIsAvailability"/>
+                    <include name="VerifyTheUserProfilePageLinks"/>
+                </methods>
+            </class> <!-- com.envision.orangehrmautomationscripts.testrunner.Orangehrm_EmployeePortal_TestRunner -->
+      </classes>
+    </test> <!-- NewOrangeHrmTestAutomation -->
+
+</suite> <!-- Default Suite -->
