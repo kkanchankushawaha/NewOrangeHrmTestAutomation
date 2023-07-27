@@ -13,7 +13,7 @@ public class RunFailedTests implements IRetryAnalyzer {
             minRetryCount++;
             return true;
         }
-
+System.out.println("test");
         return false;
     }
 }
